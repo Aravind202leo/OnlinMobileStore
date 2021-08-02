@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CELL KINGS PRODUCTS</title>
+    <link rel="stylesheet" href="sty.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=KoHo:wght@200&family=Merriweather:wght@300&family=Montserrat:wght@100&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico" />
+    <style>
+      .pic {
+        position: absolute;
+        right: 240px;
+        top: 20px;
+        width: 30px;
+        height: 30px;
+      }
+      .pi {
+        position: absolute;
+        left: 100px;
+        top: 15px;
+        width: 50px;
+        height: 50px;
+      }
+      .al {
+        margin-left: 170px;
+        margin-right: 100px;
+      }
+      h2 {
+        text-align: center;
+      }
+      .ma {
+        margin-left: 500px;
+      }
+      .form-container {
+        background-color: #fff;
+        box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+          0 20px 30px 5px rgba(0, 0, 0, 0.12),
+          0 8px 10px -5px rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+        font-weight: bold;
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="p-3 bg-info text-white">
+      <div class="container">
+        <div class="d-flex">
+          <ul class="nav me-lg-auto mb-2 al">
+            <li>
+              <a href="index.html" class="nav-link px-2 text-dark">Home</a>
+            </li>
+
+            <li>
+              <a href="index.html" class="nav-link px-2 text-dark">Pricing</a>
+            </li>
+            <li>
+              <a href="#con" class="nav-link px-2 text-dark">Contact us</a>
+            </li>
+            <li>
+              <a href="location.html" class="nav-link px-2 text-dark"
+                >location</a
+              >
+            </li>
+            <li>
+              <a href="features.html" class="nav-link px-2 text-dark"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a href="feedback.html" class="nav-link px-2 text-dark"
+                >Feedback</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <img class="pi" src="logo.jpg" alt="" />
+    <br />
+    <br />
+    <div class="ma">
+      <div class="container">
+        <div class="imagebg"></div>
+        <div class="row" style="margin-top: 50px">
+          <div class="col-md-6 col-md-offset-3 form-container">
+            <h2>Feedback</h2>
+            <p>Please provide your feedback below:</p>
+            <form action="fee.html" id="reused_form">
+              <div class="row">
+                <div class="col-sm-12 form-group">
+                  <label>How do you rate your overall experience?</label>
+                  <p>
+                    <label class="radio-inline">
+                      <input
+                        type="radio"
+                        name="experience"
+                        id="radio_experience"
+                        value="bad"
+                      />
+                      Bad
+                    </label>
+                    <label class="radio-inline">
+                      <input
+                        type="radio"
+                        name="experience"
+                        id="radio_experience"
+                        value="average"
+                      />
+                      Average
+                    </label>
+                    <label class="radio-inline">
+                      <input
+                        type="radio"
+                        name="experience"
+                        id="radio_experience"
+                        value="good"
+                      />
+                      Good
+                    </label>
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 form-group">
+                  <label for="comments"> Comments:</label>
+                  <textarea
+                    class="form-control"
+                    type="textarea"
+                    name="comments"
+                    id="comments"
+                    placeholder="Your Comments"
+                    maxlength="6000"
+                    rows="7"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 form-group">
+                  <label for="name"> Your Name:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div class="col-sm-6 form-group">
+                  <label for="email"> Email:</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                </div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-sm-12 form-group">
+                  <button
+                    type="submit"
+                    class="btn btn-lg btn-warning btn-block"
+                    style="margin-left: 190px"
+                  >
+                    Submit
+                  </button>
+                  <br />
+                </div>
+              </div>
+            </form>
+            <div
+              id="success_message"
+              style="width: 100%; height: 100%; display: none"
+            >
+              <h3>Posted your feedback successfully!</h3>
+            </div>
+            <div
+              id="error_message"
+              style="width: 100%; height: 100%; display: none"
+            >
+              <h3>Error</h3>
+              Sorry there was an error sending your form.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+    <br /><br />
+    <a
+      class="BUTTON_MWP"
+      style="margin-left: 650px"
+      href="mailto:aravind202@gmail.com"
+      id="con"
+      >CONTACT US</a
+    >
+    <br /><br />
+
+    <div class="bottom" style="font-family: Montserrat, sans-serif">
+      <a
+        class="footer-link"
+        href="https://www.linkedin.com/in/aravind-s-314b70206"
+        >LinkedIn</a
+      >
+      <a
+        class="footer-link"
+        href="https://twitter.com/Aravindstar6/ "
+        target="_blank"
+        >Twitter</a
+      >
+      <a
+        class="footer-link"
+        href="https://aravind202leo.github.io/ARAVIND-1ST-WEBSITE/"
+        >Website</a
+      >
+      <br />
+      <p class="cp" style="font-weight: bold; margin-top: 10px">
+        © 2021 CELL KINGS
+      </p>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
